@@ -1,16 +1,21 @@
-
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
 #recipe{
-    margin: auto;
+    text-align: left;
+    text-indent: 75px;
 }
 #fav_food{
-    margin: auto;
+    text-align: left;
+    text-indent: 120px;
+}
+.indentended-list {
+    padding-left: 120px;
 }
 #Ingredient_list{
-    margin: auto;
+    text-align:left; 
+    text-indent: 75px;  
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 #Hyperlinks {

@@ -1,0 +1,17 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#Ingredient_list{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#Hyperlinks {
+    font-family: Arial;
+    text-align: center;
+    border: 3px dashed red;
+    padding: 5px;
+    background-color:blanchedalmond;
+}
+#Hyperlinks a:hover {
+    color:crimson;
+}

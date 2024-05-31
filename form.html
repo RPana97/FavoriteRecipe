@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+<style>
+    textarea{
+        resize:none;
+    }
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review</title>
+    <title>Questions</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Panagrosso Family Lasagna</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Main menu</a></li>
+            <li><a href="ingredients.html">Ingredients</a></li>
+            <li><a href="directions.html">Step by Step</a></li>
+            <li><a href="form.html">Questions</a></li>
+         </ul>
+    </nav>
+    <hr>
     <section id="reviews">
         <div class="form.container">
             <div class="form-container">
-                <h2>Submit a Review</h2>
+                <h2>We appreciate your feedback and questions!</h2>
                 <form action="/submit_review" method="post">
                     <div class="form-group2">
-                        <label for="questions">Any Questions?</label>
-                        <input type="text" id="text" name="questions">
+                     <label for="text">Any Questions/Feedback?</label>
+                     <textarea name="questions" id="text"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="name">Name:</label>
@@ -25,14 +42,14 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Submit Review">
+                        <input type="submit" value="Submit">
                     </div>
                 </form>
         </div>
+    </section>
         <footer>
-            <p>&copy; 2024 Favorite recipe</p>
+            <p>&copy; 2024 Panagrosso Family Lasagna</p>
             <p> Ryan Panagrosso</p>
     </footer>   
-    </section>
 </body>
 </html>

@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -37,19 +37,42 @@ main {
     padding:0;
 }
 #recipe{
+    margin:50px;
     text-align: left;
 }
 #fav_food{
-    text-align: left;
-    
+    margin:50px;
+    text-align: left;  
 }
-#Ingredient_list{
-    text-align:left; 
+#ingrlist{
+    margin:50px;
+    text-align: left;  
+}
+#ingrlist h2{
+    text-align:center;
+}
+.container{
+    column-count: 2; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    width:50%;
+}
+.column_list {
+    margin:auto;
+    display:flex;
+    flex: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.column_list li {
+    box-sizing:border-box;
+    padding:10px;
+    border-bottom: 1px solid black
 }
 .form-container {
     max-width: 500px;
     margin: 0 auto;
+    margin-top: 50px;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -75,12 +98,14 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.form-group2 input[type="text"]{
+.form-group2 textarea{
     width: 100%;
-    padding: 50px;
+    height: 100px;
+    padding: 5px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 4px;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 .form-group input[type="submit"] {
@@ -96,17 +121,16 @@ main {
 .form-group input[type="submit"]:hover {
     background-color: #0056b3;
 }
-#Hyperlinks {
-    margin: auto;
-    font-family: Arial;
-    text-align: center;
-    border: 3px dashed red;
-    width: 500px;
-    padding: 5px;
-    background-color:blanchedalmond;
+
+.image-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;    
+    width:100%;
 }
-#Hyperlinks a:hover {
-    color:crimson;
+.image-container img {
+    max-width: 50%;
+    height :auto;
 }
 footer {
     background-color:darkolivegreen;

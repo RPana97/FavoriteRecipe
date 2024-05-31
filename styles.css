@@ -4,13 +4,14 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
-
+/*All page headers*/
 header {
     background-color:darkolivegreen;
     color:white;
     text-align:center;
     padding: 20px 0;
 }
+/*nav bar style*/
 nav {
     background-color:darkgreen;
 }
@@ -36,14 +37,29 @@ nav ul li a:hover {
 main {
     padding:0;
 }
-#recipe{
-    margin:50px;
-    text-align: left;
-}
+/* Main menu style*/
 #fav_food{
     margin:50px;
     text-align: left;  
 }
+.image-container {
+    display:flex;
+    justify-content: center;
+    align-items:center;    
+    width:100%;
+}
+.image-container img {
+    max-width: 50%;
+    height :auto;
+}
+
+/*recipe/step by step page style*/
+#recipe{
+    margin:50px;
+    text-align: left;
+}
+
+/*style for the ingredients page*/
 #ingrlist{
     margin:50px;
     text-align: left;  
@@ -69,6 +85,8 @@ main {
     padding:10px;
     border-bottom: 1px solid black
 }
+
+/*style for the form input page*/
 .form-container {
     max-width: 500px;
     margin: 0 auto;
@@ -77,19 +95,16 @@ main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .form-group,
 .form-group2 {
     margin-bottom: 15px;
 }
-
 .form-group label,
 .form-group2 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
-
 .form-group input[type="text"],
 .form-group input[type="email"] {
     width: 100%;
@@ -107,7 +122,6 @@ main {
     border-radius: 4px;
     font-family:Arial, Helvetica, sans-serif
 }
-
 .form-group input[type="submit"] {
     padding: 10px 20px;
     background-color: #007BFF;
@@ -117,21 +131,10 @@ main {
     font-size: 16px;
     border-radius: 4px;
 }
-
 .form-group input[type="submit"]:hover {
     background-color: #0056b3;
 }
-
-.image-container {
-    display:flex;
-    justify-content: center;
-    align-items:center;    
-    width:100%;
-}
-.image-container img {
-    max-width: 50%;
-    height :auto;
-}
+/*style for the footer*/
 footer {
     background-color:darkolivegreen;
     text-align: center;

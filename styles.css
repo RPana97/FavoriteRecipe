@@ -4,13 +4,21 @@ body {
     padding: 0;
     box-sizing: border-box;
 }
+
 /*All page headers*/
 header {
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size:xx-large;
     background-color:darkolivegreen;
     color:white;
-    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    height: 100px;
     padding: 20px 0;
 }
+
 /*nav bar style*/
 nav {
     background-color:darkgreen;
@@ -37,6 +45,7 @@ nav ul li a:hover {
 main {
     padding:0;
 }
+
 /* Main menu style*/
 #fav_food{
     margin:50px;
@@ -62,7 +71,7 @@ main {
 .nutrition {
     float:right;
     width:calc(60%-20px);
-    margin-right:10px;
+    margin-right:80px;
 }
 .nutr_table {
     border-collapse: collapse;
@@ -76,6 +85,9 @@ main {
 .nutrition tr:nth-child(even) {
     background-color: gainsboro;
 }
+.nutrition tbody tr:hover {
+    background-color: rgb(104, 107, 107);
+}
 .titlerow th{
     border:none;
     text-align: center;
@@ -88,10 +100,14 @@ main {
     text-align: center;
     background-color: transparent;
 }
+
 /*style for the ingredients page*/
 #ingrlist{
-    margin:50px;
-    text-align: left;  
+    margin-top:20px;
+    margin-left: 60px;
+    float:left;
+    text-align: left; 
+    width: calc(70%-30px);
 }
 #ingrlist h2{
     text-align:center;
@@ -99,7 +115,7 @@ main {
 .container{
     column-count: 2; 
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width:50%;
+    width:100%;
 }
 .column_list {
     margin:auto;
@@ -107,12 +123,21 @@ main {
     flex: wrap;
     flex-direction: column;
     justify-content: space-between;
-
 }
 .column_list li {
     box-sizing:border-box;
     padding:10px;
     border-bottom: 1px solid black
+}
+.ingred-container {
+    float:left;
+    margin-top: 20px;
+    margin-left:100px;
+    width: 30%;
+}
+.ingred{
+    width:650px;
+    height:500px
 }
 
 /*style for the form input page*/
@@ -163,6 +188,7 @@ main {
 .form-group input[type="submit"]:hover {
     background-color: #0056b3;
 }
+
 /*style for the footer*/
 footer {
     background-color:darkolivegreen;

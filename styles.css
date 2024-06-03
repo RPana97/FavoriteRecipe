@@ -3,13 +3,15 @@ body {
     margin:0;
     padding: 0;
     box-sizing: border-box;
+    background-color:white;
+    ;
 }
 
 /*All page headers*/
 header {
     font-family: Brush Script MT, Brush Script Std, cursive;
     font-size:xx-large;
-    background-color:darkolivegreen;
+    background-color:#738151;
     color:white;
     display:flex;
     justify-content: center;
@@ -21,7 +23,7 @@ header {
 
 /*nav bar style*/
 nav {
-    background-color:darkgreen;
+    background-color:#A2B082;
 }
 nav ul {
     list-style: none;
@@ -40,16 +42,16 @@ nav ul a {
     display: block;
 }
 nav ul li a:hover {
-    background-color:darkslategrey;
-}
-main {
-    padding:0;
+    background-color:#7B8A56;
+    text-decoration: underline;
 }
 
 /* Main menu style*/
 #fav_food{
     margin:50px;
-    text-align: left;  
+    text-align: center;  
+    background-color:#f0f0f0;
+    padding: 10px;
 }
 .image-container {
     display:flex;
@@ -67,6 +69,9 @@ main {
     text-align: left;
     float: left;
     width: calc(40%-20px);
+    background-color: #f0f0f0;
+    padding:10px;
+    margin-left: 20px;
 }
 .nutrition {
     float:right;
@@ -81,6 +86,9 @@ main {
 .nutr_table th, .nutr_table td{
     border: 1px solid black;
     padding: 2px;
+}
+.nutrition tbody tr {
+    background-color: white;
 }
 .nutrition tr:nth-child(even) {
     background-color: gainsboro;
@@ -104,10 +112,12 @@ main {
 /*style for the ingredients page*/
 #ingrlist{
     margin-top:20px;
-    margin-left: 60px;
+    margin-left: 80px;
     float:left;
     text-align: left; 
     width: calc(70%-30px);
+    background-color: #f0f0f0;
+    padding:10px;
 }
 #ingrlist h2{
     text-align:center;
@@ -191,11 +201,23 @@ main {
 
 /*style for the footer*/
 footer {
-    background-color:darkolivegreen;
+    background-color:#738151;
     text-align: center;
     color:white;
     padding: 10px 0;
     position:fixed;
     bottom:0;
     width:100%;
+}
+
+/*Media Queries */
+@media screen and (max-width: 768px) {
+    .recipe {
+        float:none;
+        width:100%;
+    }
+    #ingrlist {
+        float:none;
+        width: 100%;
+    }
 }

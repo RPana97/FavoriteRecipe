@@ -263,7 +263,7 @@ footer {
         flex-wrap:wrap;
         justify-content: center;
         align-items: center;
-        width:80px;
+        width:80%;
     }
     #ingrlist {
         float:none;
@@ -273,9 +273,6 @@ footer {
         margin:20px;
         width: 80%;
     }
-    .recipe {
-        float:none;
-        width:80%    }
     .ingred {
         max-width: 100%;
         max-height: auto;

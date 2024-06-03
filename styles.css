@@ -54,11 +54,40 @@ main {
 }
 
 /*recipe/step by step page style*/
-#recipe{
-    margin:50px;
+.recipe{
     text-align: left;
+    float: left;
+    width: calc(40%-20px);
 }
-
+.nutrition {
+    float:right;
+    width:calc(60%-20px);
+    margin-right:10px;
+}
+.nutr_table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+.nutr_table th, .nutr_table td{
+    border: 1px solid black;
+    padding: 2px;
+}
+.nutrition tr:nth-child(even) {
+    background-color: gainsboro;
+}
+.titlerow th{
+    border:none;
+    text-align: center;
+}
+.nutrition thead th {
+    background-color:transparent;
+}
+.nutrition tfoot td {
+    border:none;
+    text-align: center;
+    background-color: transparent;
+}
 /*style for the ingredients page*/
 #ingrlist{
     margin:50px;
@@ -92,8 +121,8 @@ main {
     margin: 0 auto;
     margin-top: 50px;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    box-shadow: 0 0 10px black;
 }
 .form-group,
 .form-group2 {

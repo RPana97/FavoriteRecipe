@@ -17,8 +17,8 @@ header {
     justify-content: center;
     align-items: center;
     width:100%;
-    height: 100px;
-    padding: 20px 0;
+    height: 80px;
+    padding: 10px 0;
 }
 
 /*nav bar style*/
@@ -178,7 +178,7 @@ nav ul li a:hover {
 }
 .ingred{
     width:650px;
-    height:500px
+    height:500px;
 }
 
 /*style for the form input page*/
@@ -243,21 +243,72 @@ footer {
 
 /*Media Queries */
 @media screen and (max-width: 768px) {
+    header {
+        font-size:large;
+        height:60px;
+        padding: 5px 0;
+    }
+    nav ul {
+        flex-wrap:wrap;
+        justify-content: center;
+    }
+    nav ul li{
+        margin:5px;
+    }
+    nav ul a {
+        padding: 8px 16px;
+    }
     .recipe {
         float:none;
-        width:100%;
+        flex-wrap:wrap;
+        justify-content: center;
+        align-items: center;
+        width:80px;
     }
     #ingrlist {
         float:none;
-        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+        width: 80%;
     }
     .recipe {
         float:none;
-        width:100%    }
-    .ingerd {
-        max-width: 50%;
+        width:80%    }
+    .ingred {
+        max-width: 100%;
+        max-height: auto;
+    }
+    .ingred-container {
+        float:none;
+        width: 100%;
+        margin-left:0px;
     }
     .lasagnaimg {
+        max-width:auto;
+        max-height: auto;
+        margin-left: 0px;
+    }
+    .nutrition {
+        float :none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; 
+    }
+    .nutr_table {
+        width: 50%;
         max-width: 50%;
+        margin: 0 auto;
+        overflow-x: auto; 
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    .nutr_table th, .nutr_table td {
+        border: 1px solid black;
+        padding: 8px;
+        white-space: nowrap; 
+        overflow-x:auto;
     }
 }

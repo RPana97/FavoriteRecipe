@@ -49,6 +49,7 @@ nav ul li a:hover {
 /* Main menu style*/
 #fav_food{
     margin:50px;
+    margin-top:20px;
     text-align: center;  
     background-color:#f0f0f0;
     padding: 10px;
@@ -76,11 +77,13 @@ nav ul li a:hover {
     background-color: #f0f0f0;
     padding:10px;
     margin-left: 20px;
+    margin-top: 20px;
 }
 .nutrition {
     float:right;
     width:calc(60%-20px);
     margin-right:80px;
+    margin-top:20px;
 }
 .nutr_table {
     border-collapse: collapse;

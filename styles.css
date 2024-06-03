@@ -251,4 +251,13 @@ footer {
         float:none;
         width: 100%;
     }
+    .recipe {
+        float:none;
+        width:100%    }
+    .ingerd {
+        max-width: 50%;
+    }
+    .lasagnaimg {
+        max-width: 50%;
+    }
 }

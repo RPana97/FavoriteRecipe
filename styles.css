@@ -79,6 +79,9 @@ nav ul li a:hover {
     margin-left: 20px;
     margin-top: 20px;
 }
+.recipe h2 {
+    text-align:center;
+}
 .nutrition {
     float:right;
     width:calc(60%-20px);
